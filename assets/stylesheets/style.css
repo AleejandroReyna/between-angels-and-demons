@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Header */
+
+header.main-header .custom-logo {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+}
+
+/* Main Footer */
+
+footer.main-footer .footer-logo {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+}
