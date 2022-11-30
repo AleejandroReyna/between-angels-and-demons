@@ -7,5 +7,5 @@
     <title><?php bloginfo( $show = 'name' ) ?> | <?php bloginfo( $show = 'description' )?></title>
     <?php wp_head(); ?>
 </head>
-    <?php #require_once ( 'partials/headers/main-header.php' ); ?>
+    <?php get_template_part ( 'template-parts/headers/main-header' ); ?>
 <body>
