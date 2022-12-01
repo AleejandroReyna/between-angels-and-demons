@@ -10,7 +10,8 @@
             ?>
 
             <?php
-                $menu_args = array( 'theme_location' => 'top_menu' , 'container' => 'nav', 'class' => 'header-nav');
+                $menu_args = array( 
+                    'theme_location' => 'top_menu' , 'container' => 'nav', 'menu_class' => 'main-header-menu');
                 wp_nav_menu( $menu_args );
             ?>
         </div>

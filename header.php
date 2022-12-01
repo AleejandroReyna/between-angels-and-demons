@@ -8,5 +8,5 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <main class="main-content dark-mode">
+    <main class="main-content">
         <?php get_template_part ( 'template-parts/headers/main-header' ); ?>
