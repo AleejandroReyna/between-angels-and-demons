@@ -3,7 +3,7 @@
         if ( has_custom_logo() ) {
             the_custom_logo();
         } else { ?>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo bloginfo( 'name' );?></a>
+            <a class="blog-title" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo bloginfo( 'name' );?></a>
         <?php }
     ?>
 
