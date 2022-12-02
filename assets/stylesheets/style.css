@@ -80,7 +80,8 @@ header.main-header .main-header-menu li:last-child {
 
 header.main-header .blog-title {
     font-weight: bolder;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-family: 'Tangerine', cursive;
 }
 
 header.main-header a {
@@ -89,11 +90,40 @@ header.main-header a {
 
 /* Main Footer */
 
+footer.main-footer {
+    display: flex;
+    justify-content: center;
+}
+
 footer.main-footer .footer-logo {
     width: auto;
     height: auto;
     max-width: 100px;
 }
+
+footer.main-footer .footer-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem 2rem;
+}
+
+footer.main-footer .main-footer-menu {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer.main-footer .main-footer-menu li {
+    padding: 0 1rem;
+}
+
+footer.main-footer .main-footer-menu a {
+    text-decoration: none;
+}
+
+/* Single */
 
 .single-container {
     display: flex;
@@ -118,4 +148,13 @@ footer.main-footer .footer-logo {
 
 .single.single-post a {
     text-decoration: dotted;
+}
+
+.single-footer-content {
+    display: flex;
+    padding: 1em 0 3em;
+}
+
+.single-footer-content .single-tags {
+    margin-left: auto;
 }

@@ -17,6 +17,38 @@ get_header(); ?>
                 <br><br>
             </div>
             <?php the_content(); ?>
+            <hr>
+            <div class="single-footer-content">
+                    <?php if ( has_category() ) { ?>
+
+                        <div class="single-categories">
+                            <?php
+                            $categories_list = get_the_category_list( __( ', ', 'demons' ) );
+                            if ( $categories_list ) {
+                                printf(
+                                    '<span class="cat-links">' . esc_html__( 'Categorized as %s', 'demons' ) . ' </span>',
+                                    $categories_list
+                                );
+                            }
+                            ?>
+
+                        </div>
+                    <?php } 
+                    if (has_tag()) { ?>
+                        <div class="single-tags">
+                            <?php 
+                                $tags_list = get_the_tag_list( '', __( ', ', 'demons' ) );
+                                if ( $tags_list ) {
+                                    printf(
+                                        /* translators: %s: list of tags. */
+                                        '<span class="tags-links">' . esc_html__( 'Tagged %s', 'demons' ) . '</span>',
+                                        $tags_list // phpcs:ignore WordPress.Security.EscapeOutput
+                                    );
+                                }
+                            ?>
+                        </div>
+                    <?php } ?>
+            </div>
         </div>
 
     <?php endwhile; endif; ?>
