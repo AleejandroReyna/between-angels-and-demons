@@ -115,12 +115,29 @@ footer.main-footer .main-footer-menu {
     justify-content: center;
 }
 
-footer.main-footer .main-footer-menu li {
+footer.main-footer li {
     padding: 0 1rem;
 }
 
-footer.main-footer .main-footer-menu a {
+footer.main-footer a {
     text-decoration: none;
+}
+
+footer.main-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Page */
+
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-container .page-content {
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 1200px;
 }
 
 /* Single */
