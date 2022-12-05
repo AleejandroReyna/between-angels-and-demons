@@ -140,6 +140,13 @@ footer.main-footer a:hover {
     max-width: 1200px;
 }
 
+.page-container .page-content p {
+    font-size: var(--wp--preset--font-size--medium) !important;
+    line-height: 1.8rem;
+    margin-block-end: 2em;
+
+}
+
 /* Single */
 
 .single-container {
