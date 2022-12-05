@@ -7,5 +7,6 @@
     <title><?php bloginfo( $show = 'name' ) ?> | <?php bloginfo( $show = 'description' )?></title>
     <?php wp_head(); ?>
 </head>
-    <?php get_template_part ( 'template-parts/headers/main-header' ); ?>
 <body>
+    <main class="main-content">
+        <?php get_template_part ( 'template-parts/headers/main-header' ); ?>
