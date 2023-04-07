@@ -5,14 +5,29 @@
             wp_nav_menu($menu_args);
         ?><br>
         <hr>
-        <div class="flex space-between">
+        <div class="flex space-between align-center">
             <div>
-                <br>
-                <a target="_blank" href="https://alejandroreyna.com"><?php bloginfo( 'description', 'display' ); ?></a>
-                <br>
-                <br>
+                <?php
+
+                    if ( is_active_sidebar( 'footer-left' ) ) : ?>
+
+                        <aside class="footer-left-area">
+                            <?php dynamic_sidebar( 'footer-left' ); ?>
+                        </aside><!-- .widget-area -->
+
+                <?php endif; ?>
             </div>
-            <div></div>
+            <div>
+                <?php
+
+                if ( is_active_sidebar( 'footer-right' ) ) : ?>
+
+                    <aside class="footer-right-area">
+                        <?php dynamic_sidebar( 'footer-right' ); ?>
+                    </aside><!-- .widget-area -->
+
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 

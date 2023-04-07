@@ -20,6 +20,25 @@ body {
     text-align: right;
 }
 
+/* General */
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+ul, ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
 /* Main */
 main.main-content {
     color: #15151b;
@@ -119,7 +138,7 @@ footer.main-footer .main-footer-menu {
     justify-content: center;
 }
 
-footer.main-footer li {
+footer.main-footer .main-footer-menu li {
     padding: 0 1rem;
 }
 
