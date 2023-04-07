@@ -33,7 +33,7 @@ services:
       WORDPRESS_TABLE_PREFIX: "${WORDPRESS_PREFIX}"
       WORDPRESS_DEBUG: ${WORDPRESS_DEBUG}
     volumes:
-      - ./:/var/www/html/wp-content/themes/voices-of-angels-and-demons
+      - ./:/var/www/html/wp-content/themes/between-angels-and-demons
 
 volumes:
   db:
