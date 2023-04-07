@@ -12,6 +12,9 @@ body {
     padding: 0;
 }
 
+
+/* General */
+
 .high-title {
     font-family: 'Tangerine', cursive;
 }
@@ -20,9 +23,12 @@ body {
     text-align: right;
 }
 
-/* General */
 .flex {
     display: flex;
+}
+
+a {
+    text-decoration: none;
 }
 
 .space-between {
@@ -55,11 +61,11 @@ main.main-content a {
 
 main.main-content.dark-mode {
     color: #fff;
-    background: #343940;
+    background: #202328;
 }
 
 main.main-content.dark-mode a {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* Main Header */
@@ -148,6 +154,26 @@ footer.main-footer a {
 
 footer.main-footer a:hover {
     text-decoration: underline;
+}
+
+/* Main Display Article */
+
+.main-article {
+    padding: 3em 0 1em;
+}
+
+.main-article img {
+    display: inline;
+    width: 1.5em;
+    height: auto;
+}
+
+.main-article a {
+    opacity: .75;
+}
+
+.main-article a:hover {
+    opacity: 1;
 }
 
 /* Page */
