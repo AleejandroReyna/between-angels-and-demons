@@ -1,0 +1,39 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_PASSWORD}"
+    volumes:
+      - db:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - 80:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: "${MYSQL_USER}"
+      WORDPRESS_DB_PASSWORD: "${MYSQL_PASSWORD}"
+      WORDPRESS_DB_NAME: "${MYSQL_DATABASE}"
+      WORDPRESS_TABLE_PREFIX: "${WORDPRESS_PREFIX}"
+      WORDPRESS_DEBUG: ${WORDPRESS_DEBUG}
+    volumes:
+      - ./:/var/www/html/wp-content/themes/between-angels-and-demons
+
+volumes:
+  db:
