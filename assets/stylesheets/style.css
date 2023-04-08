@@ -229,6 +229,29 @@ footer.main-footer a:hover {
     margin-left: auto;
 }
 
+/* Category */
+
+.category-container .category-title {
+    margin-bottom: .2em;
+}
+
+.category-container .nav-links {
+    text-align: center;
+}
+
+.category-container .nav-links .page-numbers {
+    opacity: .7;
+}
+
+.category-container .nav-links .current {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.category-container .nav-links .page-numbers:hover {
+    opacity: 1;
+}
+
 /* Dark Mode */
 
 main.main-content .dark-visible {
