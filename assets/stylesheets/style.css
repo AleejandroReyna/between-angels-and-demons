@@ -161,7 +161,7 @@ footer.main-footer a:hover {
 
 .main-article img {
     display: inline;
-    width: 1.5em;
+    width: 1em;
     height: auto;
 }
 
@@ -231,7 +231,7 @@ footer.main-footer a:hover {
 
 /* Dark Mode */
 
-.dark-visible {
+main.main-content .dark-visible {
     display: none;
 }
 
