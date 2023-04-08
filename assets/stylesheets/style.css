@@ -190,7 +190,23 @@ footer.main-footer a:hover {
     font-size: var(--wp--preset--font-size--medium) !important;
     line-height: 1.8rem;
     margin-block-end: 2em;
+}
 
+.page-container .nav-links {
+    text-align: center;
+}
+
+.page-container .nav-links .page-numbers {
+    opacity: .7;
+}
+
+.page-container .nav-links .current {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.page-container .nav-links .page-numbers:hover {
+    opacity: 1;
 }
 
 /* Single */
@@ -233,23 +249,6 @@ footer.main-footer a:hover {
 
 .category-container .category-title {
     margin-bottom: .2em;
-}
-
-.category-container .nav-links {
-    text-align: center;
-}
-
-.category-container .nav-links .page-numbers {
-    opacity: .7;
-}
-
-.category-container .nav-links .current {
-    opacity: 1;
-    font-weight: bold;
-}
-
-.category-container .nav-links .page-numbers:hover {
-    opacity: 1;
 }
 
 /* Dark Mode */
